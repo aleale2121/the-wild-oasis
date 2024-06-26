@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import React from "react";
 import Button from "../../ui/Button";
 import Modal from "../../ui/Modal";
