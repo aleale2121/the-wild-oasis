@@ -51,18 +51,19 @@ const Button = styled.button`
   }
 `;
 
-// import React from 'react'
-
-export default function Modal({ children, onClose }) {
+function Modal({ children, onClose }) {
   return createPortal(
     <Overlay>
       <StyledModal>
         <Button onClick={onClose}>
           <HiXMark />
         </Button>
+
         <div>{children}</div>
       </StyledModal>
     </Overlay>,
     document.body
   );
 }
+
+export default Modal;
